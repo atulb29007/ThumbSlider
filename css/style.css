@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 body, html{
-  height: 100%;
-  width: 100%;
-  margin: 0;
+  height:100%;
+  width:100%;
+  margin:0;
   padding:0;
 }
 #body-container{
@@ -18,10 +18,10 @@ body, html{
 #container{
   margin: 0 auto;
   width:100%;
-  border: 1px solid black;
   flex-shrink:0;
   flex-grow:1;
   display:flex;
+  background-color:black
 }
 .arrow-div,.image-div{
   margin:0;
@@ -31,10 +31,30 @@ body, html{
 .arrow-div{
   width:6%;
   background-color:black;
+  position:relative;
 }
-.image-div{
+.arrow-div>i{
+  color:white;
+  display:block;
+  margin:0;
+  padding:0;
+  font-size:40px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-8px;
+  margin-top:-20px;
+  cursor: pointer;
+}
+.leftSlide{
+  border-right:1px solid #484747;
+}
+.rightSlide{
+  border-left:1px solid #484747;
+}
+.imageDiv{
   width:88%;
-  background-image:url("../img/elena.jpg");
+  background-image:url('../img/slides/photo0.png');
   background-position:center;
   background-size:contain;
   background-repeat:no-repeat;
@@ -43,20 +63,63 @@ body, html{
   margin: 0 auto;
   width:100%;
   text-align: center;
-  background-color: white;
   flex-shrink:0;
 }
 #header{
-  height:50px;
-  background-color:red;
+  height:40px;
+  background-color:black;
+  border-bottom:1px solid #484747;
 }
 #footer{
-  height:100px;
-  background-color:green;
+  height:81px;
+  background-color:black;
+  border-top:1px solid #484747;
 }
+
+div#header>p{
+  margin:0;
+  padding:0;
+  text-align:center;
+  font-size:1.4em;
+  line-height:40px;
+  font-family:'Josefin Sans';
+  color:white;
+}
+
 .col{
   height:90%;
   flex-shrink:0;
   flex-grow:1;
   margin:0 2% 0 2%;
+}
+#thumblist-container{
+  margin:0 auto;
+  padding:0;
+  text-align: center;
+  display:flex;;
+}
+ul#thumblist{
+  margin:0 auto;
+  padding:0;
+  height:80px;
+  display:block;
+  box-sizing:border-box;
+  background-color:#eeedef;
+  overflow:auto;
+}
+ul#thumblist>li{
+  margin:0;
+  list-style-type:none;
+  padding:0;
+  float:left;
+  height:80px;
+}
+ul#thumblist>li>img{
+  margin:0;
+  padding:0;
+  display:block;
+  height:80px;
+}
+ul#thumblist>li.notOn>img{
+  opacity:0.5;
 }

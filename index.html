@@ -7,30 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Our Page</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container" id="body-container">
       <div id="header">
+        <p>Thumb-Slider</p>
       </div>
       <div id="container">
-        <div class="arrow-div">
+        <div class="arrow-div leftSlide">
+          <i class="fa fa-angle-left"></i>
         </div>
-        <div class="image-div">
+        <div class="imageDiv">
         </div>
         <!-- <img src="img/elena.jpg" /> -->
         <!-- <div class="col"></div> -->
         <!-- <div class="col"></div> -->
-        <div class="arrow-div">
+        <div class="arrow-div rightSlide">
+          <i class="fa fa-angle-right"></i>
         </div>
       </div>
       <div id="footer">
+        <div id="thumblist-container">
+          <ul id="thumblist">
+            <li class="thumbnails"><img src="img/slides/photo0_thumb.png"/></li>
+            <li class="thumbnails notOn"><img src="img/slides/photo1_thumb.png"/></li>
+            <li class="thumbnails notOn"><img src="img/slides/photo2_thumb.png"/></li>
+            <li class="thumbnails notOn"><img src="img/slides/photo3_thumb.png"/></li>
+            <li class="thumbnails notOn"><img src="img/slides/photo4_thumb.png"/></li>
+            <li class="thumbnails notOn"><img src="img/slides/photo5_thumb.png"/></li>
+            <li class="thumbnails notOn"><img src="img/slides/photo6_thumb.png"/></li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
